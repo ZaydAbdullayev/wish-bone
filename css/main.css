@@ -1,0 +1,744 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    width: 100%;
+    background: #E5E5E5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+
+/* ===================== Navbar section ============== */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1% 5%;
+    background: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    gap: 40px;
+    z-index: 9999999;
+}
+
+.navbar>p {
+    font-size: var(--fs5);
+    font-weight: 600;
+    color: #1B1A1A;
+    flex: 1;
+}
+
+.navbar>a {
+    font-size: var(--fs7);
+    color: #1B1A1A;
+}
+
+.navbar>a:hover {
+    font-weight: 600;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.menu {
+    display: none;
+    width: 40px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.menu>img {
+    width: 100%;
+}
+
+/* ===================== Home section ============== */
+.Home_page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #E5E5E5;
+}
+
+.left_box {
+    width: 50%;
+    padding: var(--pd1);
+    display: flex;
+    flex-direction: column;
+    color: #1B1A1A;
+}
+
+.left_box>:nth-child(1) {
+    font-size: var(--fs7);
+    letter-spacing: 1px;
+}
+
+.left_box>:nth-child(2) {
+    font-size: var(--fs1);
+}
+
+.left_box>:nth-child(3) {
+    font-size: var(--fs6);
+}
+
+.left_box>:nth-child(4),
+.about_us>:nth-child(3) {
+    font-size: var(--fs6);
+    color: #1B1A1A;
+    padding: var(--pd1);
+    transition: all 0.3s ease-in-out;
+}
+
+.left_box>:nth-child(4):hover,
+.about_us>:nth-child(3):hover {
+    font-weight: 700;
+}
+
+.right_box {
+    width: 50%;
+}
+
+.right_box>figure {
+    width: 100%;
+}
+
+/* =================== Comment section ============= */
+.Our_firm {
+    width: 100%;
+    padding: var(--pd1);
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: #403E3B;
+}
+
+.Our_firm>p {
+    font-size: var(--fs4);
+}
+
+.comment {
+    width: 495px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: var(--fs6);
+}
+
+.user_box {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.user_box>p {
+    font-size: var(--fs6);
+}
+
+.user_box>p>span {
+    font-size: var(--fs8);
+    color: #645C55;
+}
+
+/* ============ Redding house ============ */
+.p_img_box {
+    width: 100%;
+    position: relative;
+}
+
+.p_img_box>figure {
+    width: 100%;
+    height: 100%;
+}
+
+.right_box>figure>img,
+.p_img_box>figure>img,
+.process_item>figure>img,
+.company_box>a>img,
+.project_item>figure>img,
+.sosyal>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+.paragraf {
+    width: 18%;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 6%;
+    color: #403E3B;
+}
+
+.paragraf>:nth-child(1),
+.Our_process>:nth-child(1),
+.info_box>:nth-child(1),
+.view_item>:nth-child(1),
+.offer_item>:nth-child(1) {
+    font-size: var(--fs8);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.paragraf>:nth-child(2) {
+    font-size: var(--fs6);
+}
+
+/* ============= Our process section =========== */
+.Our_process {
+    width: 100%;
+    padding: var(--pd1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #1B1A1A;
+}
+
+.Our_process>:nth-child(2) {
+    font-size: var(--fs3);
+}
+
+.process_box {
+    width: 100%;
+    display: flex;
+    padding: 3%;
+    justify-content: center;
+    gap: 100px;
+}
+
+.process_item {
+    width: 22%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.process_item>figure {
+    width: 45%;
+}
+
+.process_item>:nth-child(2) {
+    font-size: var(--fs9);
+    color: #403E3B;
+}
+
+.process_item>:nth-child(3) {
+    font-size: var(--fs7);
+    color: #645C55;
+}
+
+/* ================= Clients section ============ */
+.Clients_box {
+    width: 100%;
+    padding: var(--pd1);
+    display: flex;
+    align-items: center;
+    background: #403E3B;
+    gap: 200px;
+}
+
+.info_box {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.info_box>:nth-child(2) {
+    font-size: var(--fs4);
+}
+
+.info_box>:nth-child(3) {
+    font-size: var(--fs7);
+    margin-top: 3%;
+}
+
+.company_box {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.company_box>a {
+    width: 30%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ================= Projects section ============ */
+.Project_container {
+    width: 100%;
+    padding: var(--pd1);
+    display: flex;
+    flex-direction: column;
+    background: #F7F7F7;
+    gap: 10px;
+}
+
+.Project_container>:nth-child(1) {
+    font-size: var(--fs3);
+    color: #1B1A1A;
+}
+
+.Project_container>:nth-child(2) {
+    width: 45%;
+    font-size: var(--fs5);
+    color: #645C55;
+}
+
+.project_box {
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project_item {
+    width: 32%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.project_item>figure {
+    width: 100%;
+}
+
+.project_item:hover>.view {
+    top: 0;
+    z-index: 9999;
+}
+
+.view {
+    position: absolute;
+    top: -100%;
+    z-index: -9999;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    background: #00000041;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.view_item>:nth-child(2) {
+    font-size: var(--fs5);
+}
+
+.view>button {
+    width: 150px;
+}
+
+.Project_container>:last-child {
+    margin-top: 2%;
+    text-align: center;
+    font-size: var(--fs6);
+    font-weight: 500;
+    color: #1B1A1A;
+}
+
+/* ================= About our team ============ */
+.Our_team_container {
+    width: 100%;
+    padding: var(--pd1);
+    display: flex;
+    gap: 20px;
+}
+
+.about_us {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about_us>:nth-child(1) {
+    font-size: var(--fs4);
+    color: #403E3B;
+}
+
+.about_us>:nth-child(2) {
+    font-size: var(--fs7);
+    color: #645C55;
+}
+
+.about_team {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* ================= Offer section ================ */
+.Offer_box {
+    width: 100%;
+    padding: var(--pd1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #CEC4BC;
+}
+
+.offer_item>:nth-child(2) {
+    font-size: var(--fs2);
+    width: 60%;
+}
+
+.Offer_box>a {
+    font-size: var(--fs5);
+    color: #1B1A1A;
+}
+
+.Offer_box>a:hover {
+    border: 2px dashed #403E3B;
+    padding: 0 1%;
+}
+
+/* ================= Footer section ================ */
+.foot {
+    width: 100%;
+    padding: 3% 5%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.foot_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foot_item>:nth-child(1) {
+    font-size: var(--fs5);
+    font-weight: 600;
+    color: #1B1A1A;
+}
+
+.foot_item>:nth-child(2) {
+    font-size: var(--fs8);
+    color: #645C55;
+}
+
+.sosyal {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sosyal>a {
+    width: 30%;
+    transition: all 0.3s ease-in-out;
+}
+
+.company_box>a:hover,
+.sosyal>a:hover {
+    transform: scale(1.2);
+}
+
+@media(max-width: 1110px) {
+    .project_item {
+        width: 31%;
+    }
+}
+
+@media(max-width: 925px) {
+    .paragraf {
+        width: 25%;
+    }
+
+    .Our_team_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .about_us {
+        width: 60%;
+        text-align: center;
+    }
+
+    .about_team {
+        width: 100%;
+    }
+
+    .user_box {
+        width: 45%;
+        gap: 20px;
+    }
+
+    .Clients_box {
+        gap: 130px;
+    }
+}
+
+@media(max-width: 860px) {
+    .navbar {
+        gap: 25px;
+    }
+
+    .left_box>:nth-child(3)>span {
+        display: none;
+    }
+
+    .Our_firm {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .comment {
+        width: 470px;
+    }
+
+    .comment>:nth-child(1) {
+        display: none;
+    }
+
+    .company_box {
+        gap: 50px;
+    }
+
+    .company_box>a {
+        width: 25%;
+    }
+}
+
+@media(max-width: 640px) {
+
+    .navbar {
+        gap: 20px;
+    }
+
+    .Home_page {
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .left_box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        text-align: center;
+        color: #fff;
+        background: #1b1a1a48;
+        border: 1px solid #99999980;
+    }
+
+    .left_box>:nth-child(4) {
+        color: #fff;
+    }
+
+    .right_box {
+        width: 100%;
+    }
+
+    .Our_firm {
+        gap: 20px;
+    }
+
+    .paragraf {
+        width: 40%;
+        right: 1%;
+        top: 35%;
+    }
+
+    .process_box {
+        gap: 50px;
+    }
+
+    .process_item {
+        width: 35%;
+    }
+
+    .Project_container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .project_box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project_item {
+        width: 48%;
+    }
+
+    .Project_container>:nth-child(2) {
+        width: 70%;
+    }
+
+    .user_box>img {
+        width: 25%;
+    }
+
+    .offer_item>:nth-child(2) {
+        width: 55%;
+    }
+}
+
+@media(max-width: 555px) {
+
+    .navbar>a,
+    .navbar>:nth-child(7) {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .comment {
+        padding: 0 5%;
+        text-align: start;
+    }
+
+    .comment>p {
+        text-indent: 20px;
+    }
+
+    .process_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .process_item {
+        width: 70%;
+    }
+
+    .process_item>figure {
+        width: 30%;
+    }
+
+    .Clients_box {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .info_box {
+        width: 70%;
+        text-align: center;
+    }
+
+    .company_box {
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .company_box>a {
+        width: 20%;
+    }
+
+    .project_item {
+        width: 46%;
+    }
+
+    .user_box {
+        width: 40%;
+    }
+
+    .Offer_box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .offer_item>:nth-child(2) {
+        width: 100%;
+    }
+}
+
+@media(max-width:450px) {
+
+    .left_box{
+        padding: 3%;
+    }
+    .project_item {
+        width: 100%;
+    }
+
+    .user_box {
+        width: 100%;
+        gap: 40px;
+    }
+
+    .user_box>img {
+        width: 20%;
+    }
+
+    .comment {
+        width: 400px;
+    }
+
+    .Our_team_container {
+        gap: 0px;
+    }
+
+    .about_us {
+        width: 100%;
+    }
+
+    .about_team {
+        gap: 20px;
+    }
+
+    .comment {
+        width: 330px;
+    }
+
+    .info_box {
+        width: 100%;
+    }
+
+    .Project_container>:nth-child(2) {
+        width: 100%;
+    }
+
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+}
